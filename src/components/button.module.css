@@ -1,7 +1,8 @@
 .buttons{
     text-align: center;
     font-weight: bold;
-    background-color: rgb(210, 209, 207);
+    background-color: rgb(230, 229, 226);
     border : none;
     border-radius: 20%;
+    margin: 1em;
 }

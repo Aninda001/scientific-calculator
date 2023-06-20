@@ -1,11 +1,9 @@
 import './App.css';
-import Button from "./components/button"
+import Keypad from "./components/keypad"
 
 function App() {
   return (
-    <div>
-      <Button>1</Button>
-    </div>
+    <Keypad/>
   );
 }
 
