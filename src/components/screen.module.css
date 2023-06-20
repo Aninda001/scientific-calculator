@@ -1,9 +1,9 @@
 .wrapper{
     height: 20vh;
     width: 35vw;
-    border-style: groove;
+    border-style: ridge;
+    border-width: 0.4em;
 }
-
 .ans{
     height: 10vh;
     width: 35vw;
