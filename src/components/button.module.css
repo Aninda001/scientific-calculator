@@ -1,0 +1,7 @@
+.buttons{
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(210, 209, 207);
+    border : none;
+    border-radius: 20%;
+}
