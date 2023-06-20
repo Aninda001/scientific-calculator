@@ -1,0 +1,19 @@
+.wrapper{
+    height: 20vh;
+    width: 35vw;
+    border-style: groove;
+}
+
+.ans{
+    height: 10vh;
+    width: 35vw;
+    background-color: rgb(236, 236, 236);
+    text-align: right;
+}
+
+.ques{
+    height: 10vh;
+    width: 35vw;
+    background-color: rgb(236, 236, 236);
+    text-align: left;
+}
