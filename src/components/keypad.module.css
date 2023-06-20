@@ -1,9 +1,15 @@
-.ordinary{
-    height: 3em;
-    width: 5em;
+.column{
+    display: flex;
+    margin: none;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.special{
-    height: 3em;
-    width: 7em;
+.keypad{
+    width: 50vw;
+    display: flex;
+    margin: none;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(180, 180, 180);
 }

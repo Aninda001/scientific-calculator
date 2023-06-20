@@ -3,6 +3,7 @@
     font-weight: bold;
     background-color: rgb(230, 229, 226);
     border : none;
-    border-radius: 20%;
-    margin: 1em;
+    border-radius: 5%;
+    padding: 2.5vh 2.5vw;
+    margin: 2vh 1vw;
 }

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css';
+import style from './App.css';
 import Keypad from "./components/keypad";
 import Screen from './components/screen';
 
@@ -9,12 +9,12 @@ function App() {
   const question = ( event ) => {
     setQues( ques + event );
   }
-  
+
   return (
-    <>
+    <main className={style.position}>
       <Screen question = {ques}/>
-      <Keypad question = {question} />
-    </>
+      <Keypad  question = {question} />
+    </main>
   );
 }
 
