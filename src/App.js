@@ -5,38 +5,29 @@ import Screen from './components/screen';
 import calc from './logic/logic';
 
 function App() {
-  const [ques , setQues ] = useState('');
+  const [quest , setQues ] = useState([]);
   const [evaluation , setEval ] = useState('');
   const [answer , setAnswer ] = useState('');
-  const question = ( event ) => {
+  const question = ( {q,val} ) => {
     if(answer){
       setQues('');
       setEval('');
       setAnswer('');
     }
 
-    if ( event === '×'){
-      setEval(prev => prev + '*' );
-    }
-    else if(event === '÷'){
-      setEval( prev => prev + '/' );
-    }
-    else if(event === 'Exp'){
-      setEval(prev => prev + '^' );
-    }
-    else if( event === 'Ans' || event === '=' ){
+    if( val === 'Ans' || val === '=' ){
       setAnswer(calc(evaluation));
       return ;
     }
     else{
-      setEval( prev => prev + event );
+      setEval( prev => prev + val );
     }
-    setQues(prev => prev + event);
+    setQues(prev => [...prev,q] );
   }
 
   return (
     <main className={style.position}>
-      <Screen question = {ques} ans = {answer} />
+      <Screen question = {quest} ans = {answer} />
       <Keypad  question = {question} />
     </main>
   );
