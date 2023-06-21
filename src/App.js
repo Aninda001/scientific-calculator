@@ -16,7 +16,11 @@ function App() {
     }
 
     if( val === 'Ans' || val === '=' ){
-      setAnswer(calc(evaluation));
+      try{
+        setAnswer(calc(evaluation));
+      }catch(e){
+        setAnswer(e.message);
+      }
       return ;
     }
     else{
