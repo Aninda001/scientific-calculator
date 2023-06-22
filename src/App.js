@@ -4,18 +4,21 @@ import Keypad from "./components/keypad";
 import Screen from './components/screen';
 import calc from './logic/logic';
 
+let ans = '';
 function App() {
   const [quest , setQues ] = useState([]);
   const [evaluation , setEval ] = useState('');
   const [answer , setAnswer ] = useState('');
+
   const question = ( {q,val} ) => {
     if(answer){
+      ans = answer;
       setQues('');
       setEval('');
       setAnswer('');
     }
 
-    if( val === 'Ans' || val === '=' ){
+    if( val === '=' ){
       try{
         setAnswer(calc(evaluation));
       }catch(e){
@@ -24,6 +27,9 @@ function App() {
       return ;
     }
     else{
+      if( val === 'Ans' ){
+        val = `(${ans})`;
+      }
       setEval( prev => prev + val );
     }
     setQues(prev => [...prev,q] );
