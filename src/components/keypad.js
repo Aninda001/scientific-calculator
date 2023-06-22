@@ -13,12 +13,15 @@ const normalKeys = [
     [{ ques: <>AC</>, evalue: 'AC' }, { ques: <>&divide;</>, evalue: '/' }, { ques: <>-</>, evalue: '-' }, { ques: <>=</>, evalue: '=' }]
 ]
 
+const specialKeys = [
+    [{ ques :<>&#40;</> , evalue : '('}, { ques : <>&#41;</>, evalue : ')' }, { ques : <>e</>, evalue : '(e)'}, { ques : <>&pi;</>, evalue : '(pi)' }]
+]
 const Keypad = (props) => {
     const screenShow = (e) => {
         props.question(e);
     }
 
-    const normalPad = normalKeys.map((col, ind) => {
+    const Pad = ( keypad ) => keypad.map((col, ind) => {
         return (
             <div className={style.column} key={ind}>
                 {col.map(({ ques, evalue }) => {
@@ -31,7 +34,8 @@ const Keypad = (props) => {
     });
     return (
         <div className={style.keypad} >
-            {normalPad}
+            {Pad(specialKeys)}
+            {Pad(normalKeys)}
         </div>
     )
 }
