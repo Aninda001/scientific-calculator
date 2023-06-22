@@ -13,7 +13,7 @@ function App() {
   const question = ( {q,val} ) => {
     if(answer){
       ans = answer;
-      setQues('');
+      setQues([]);
       setEval('');
       setAnswer('');
     }
@@ -24,6 +24,17 @@ function App() {
       }catch(e){
         setAnswer(e.message);
       }
+      return ;
+    }
+    else if( val === 'AC' ){
+      setQues([]);
+      setEval('');
+      setAnswer('');
+      return ;
+    }
+    else if( val === 'DEL' ){
+      setQues( prev => prev.slice(0,-1));
+      setEval( prev => prev.slice(0,-1));
       return ;
     }
     else{
