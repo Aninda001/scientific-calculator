@@ -14,8 +14,10 @@ const normalKeys = [
 ]
 
 const specialKeys = [
-    [{ ques :<>&#40;</> , evalue : '('}, { ques : <>&#41;</>, evalue : ')' }, { ques : <>e</>, evalue : '(e)'}, { ques : <>&pi;</>, evalue : '(pi)' }]
+    [{ ques :<>&#40;</> , evalue : '('}, { ques : <>&#41;</>, evalue : ')' }, { ques : <>e</>, evalue : '(e)'}, { ques : <>&pi;</>, evalue : '(pi)' }],
+    [{ ques :<>abs&#40;</> , evalue : 'abs('}, { ques : <>sin&#40;</>, evalue : 'sin(' }, { ques : <>cos&#40;</>, evalue : 'cos('}, { ques : <>tan&#40;</>, evalue : 'tan(' }]
 ]
+
 const Keypad = (props) => {
     const screenShow = (e) => {
         props.question(e);
@@ -33,10 +35,14 @@ const Keypad = (props) => {
         )
     });
     return (
-        <div className={style.keypad} >
+        <>
+        <div className={style.keypad}>
             {Pad(specialKeys)}
+        </div>
+        <div className={style.keypad} >
             {Pad(normalKeys)}
         </div>
+        </>
     )
 }
 
