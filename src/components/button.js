@@ -1,7 +1,7 @@
 import style from "./button.module.css";
 
 const Button = (props) => {
-    const onClickHandler = (event) => {
+    const onClickHandler = () => {
         props.screenShow(props.value);
     }
 

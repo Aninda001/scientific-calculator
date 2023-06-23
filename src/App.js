@@ -3,6 +3,7 @@ import style from './App.css';
 import Keypad from "./components/keypad";
 import Screen from './components/screen';
 import calc from './logic/logic';
+import {string, complex} from 'mathjs'
 
 let ans = '';
 function App() {
@@ -11,16 +12,22 @@ function App() {
   const [answer , setAnswer ] = useState('');
 
   const question = ( {q,val} ) => {
-    if(answer){
+    if(val !== 'DEL' && answer){
       ans = answer;
       setQues([]);
       setEval('');
       setAnswer('');
     }
-
+    
     if( val === '=' ){
       try{
-        setAnswer(calc(evaluation));
+        const output = calc(evaluation);
+        if(typeof(output) === 'object'){
+          setAnswer(string(complex(output)));
+        }
+        else{
+          setAnswer(output);
+        }
       }catch(e){
         setAnswer(e.message);
       }
@@ -35,6 +42,7 @@ function App() {
     else if( val === 'DEL' ){
       setQues( prev => prev.slice(0,-1));
       setEval( prev => prev.slice(0,-1));
+      setAnswer('');
       return ;
     }
     else{
