@@ -1,18 +1,32 @@
-.wrapper{
-    height: 16vh;
-    width: 50vw;
-    padding: 1vh 1vw;
-    box-sizing: border-box;
-    border-style: ridge;
-    border-width: 0.3rem;
-    background-color: rgb(227, 225 , 225);
+@media (min-width: 750px) {
+    .wrapper {
+        height: 16vh;
+        width: 50vw;
+        padding: 1vh 1vw;
+        box-sizing: border-box;
+        border-style: ridge;
+        border-width: 0.3rem;
+        background-color: rgb(227, 225, 225);
+    }
 }
 
-.ans{
+@media (max-width: 750px) {
+    .wrapper {
+        height: 16vh;
+        width: 100vw;
+        padding: 1vh 1vw;
+        box-sizing: border-box;
+        border-style: ridge;
+        border-width: 0.3rem;
+        background-color: rgb(227, 225, 225);
+    }
+}
+
+.ans {
     text-align: right;
 }
 
-.ques{
+.ques {
     text-align: left;
     font-size: larger;
 }

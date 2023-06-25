@@ -1,16 +1,38 @@
-.column{
-    display: flex;
-    margin: none;
-    flex-direction: column;
-    justify-content: center;
-    width: 10vw;
+@media (min-width: 750px){
+    .column{
+        display: flex;
+        margin: none;
+        flex-direction: column;
+        justify-content: center;
+        width: 10vw;
+    }
+    
+    .keypad{
+        width: 50vw;
+        display: flex;
+        margin: none;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgb(180, 180, 180);
+    }
 }
 
-.keypad{
-    width: 50vw;
-    display: flex;
-    margin: none;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: rgb(180, 180, 180);
+@media (max-width: 750px){
+    .column{
+        display: flex;
+        margin: none;
+        flex-direction: column;
+        justify-content: center;
+        width: 20vw;
+    }
+    
+    .keypad{
+        width: 100vw;
+        display: flex;
+        margin: none;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgb(180, 180, 180);
+    }
+
 }
