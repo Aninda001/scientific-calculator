@@ -1,24 +1,26 @@
 @media (min-width: 750px) {
     .wrapper {
-        height: 16vh;
+        height: 12vh;
         width: 50vw;
         padding: 1vh 1vw;
         box-sizing: border-box;
         border-style: ridge;
         border-width: 0.3rem;
         background-color: rgb(227, 225, 225);
+        overflow: scroll;
     }
 }
 
 @media (max-width: 750px) {
     .wrapper {
-        height: 16vh;
+        height: 12vh;
         width: 100vw;
         padding: 1vh 1vw;
         box-sizing: border-box;
         border-style: ridge;
         border-width: 0.3rem;
         background-color: rgb(227, 225, 225);
+        overflow: scroll;
     }
 }
 
