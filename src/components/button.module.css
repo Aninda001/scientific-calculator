@@ -1,9 +1,14 @@
-.buttons{
+.buttons {
     text-align: center;
     font-weight: bold;
     background-color: rgb(230, 229, 226);
-    border : none;
+    border: none;
     border-radius: 5%;
-    padding: 2vh 2.5vw;
+    padding: 2vh 0;
     margin: 1.5vh 1vw;
+    font-size: 1vw;
+}
+
+.buttons:active {
+    transform: translate(0.1em, 0.1em);
 }

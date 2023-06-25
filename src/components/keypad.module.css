@@ -3,6 +3,7 @@
     margin: none;
     flex-direction: column;
     justify-content: center;
+    width: 10vw;
 }
 
 .keypad{
