@@ -11,7 +11,7 @@ const normalKeys = [
 
 const specialKeys = [
     [{ ques :<>&#40;</>, view : <>&#40;</>, evalue : '('}, { ques : <>&#41;</>, view : <>&#41;</>, evalue : ')' }, { ques : <>e</>, view : <>e</>, evalue : '(e)'}, { ques : <>&pi;</>, view :<>&pi;</>, evalue : '(pi)' }],
-    [{ ques :<>abs&#40;</>, view : <>abs&#40;</>, evalue : 'abs('}, { ques : <>sin&#40;</>, view : <>sin&#40;</>, evalue : 'sin((180/pi)' }, { ques : <>cos&#40;</>, view : <>cos&#40;</>, evalue : 'cos((180/pi)'}, { ques : <>tan&#40;</>, view : <>tan&#40;</>, evalue : 'tan((180/pi)' }],
+    [{ ques :<>abs&#40;</>, view : <>abs&#40;</>, evalue : 'abs('}, { ques : <>sin&#40;</>, view : <>sin&#40;</>, evalue : 'sin((pi/180)' }, { ques : <>cos&#40;</>, view : <>cos&#40;</>, evalue : 'cos((pi/180)'}, { ques : <>tan&#40;</>, view : <>tan&#40;</>, evalue : 'tan((pi/180)' }],
     [{ ques :<>^&#40;</>, view : <>^&#40;</>, evalue : '^('}, { ques : <>log10&#40;</>, view : <>log<sub>10</sub>&#40;</>, evalue : 'log10(' }, { ques : <>ln&#40;</>, view : <>ln&#40;</>, evalue : 'log('}, { ques : <>&times;10&#40;</>, view : <>&times;10&#40;</>, evalue : '*10^(' }],
     [{ ques :<>&#44;</>, view : <>&#44;</>, evalue : ','}, { ques : <>log&#40;x&#44;base&#41;</>, view : <>log&#40;</>, evalue : 'log(' }, { ques : <><sup>n</sup>C<sub>r</sub>&#40;n&#44;r&#41;</>, view : <>C&#40;</>, evalue : 'combinations('}, { ques : <><sup>n</sup>P<sub>r</sub>&#40;n&#44;r&#41;</>, view : <>P&#40;</>, evalue : 'permutations(' }],
     [{ ques :<>x&#33;</>, view : <>&Pi;&#40;</>, evalue : 'factorial('}, { ques : <>sinh&#40;</>, view : <>sinh&#40;</>, evalue : 'sinh(' }, { ques : <>cosh&#40;</>, view : <>cosh&#40;</>, evalue : 'cosh('}, { ques : <>tanh&#40;</>, view : <>tanh&#40;</>, evalue : 'tanh(' }]
